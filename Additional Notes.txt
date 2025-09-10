@@ -1,0 +1,11 @@
+--------MODEL-------
+# from django.contrib.auth.models import User -> for importting User model which is default in django.
+# price_per_hour = models.DecimalField(max_digits=6, decimal_places=2) -> Specific the the deciaml place and number of digits.
+
+# user = models.ForeignKey(User,on_delete=models.CASCADE) - > user is the ForeignKey and "on_delete=models.CASCADE" will if the user is deleted, their bookings are deleted too.
+
+
+------VIEWS------
+# from django.contrib.auth.hashers import check_password,make_password -> for importing make_password and check_password
+# make_password = used to #hash the password given by the user
+# check_password = used to check the user given password with database stored #hashed password
